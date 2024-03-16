@@ -1,0 +1,54 @@
+{
+  "telefony": [
+    {
+      "id": 1,
+      "model": "Bticino Smart",
+      "popis": "Elegantní domácí telefon s moderním designem",
+      "rozhraní": "Dotykový displej",
+      "barva": "Černá",
+      "funkce": "Integrovaný reproduktor pro hands-free komunikaci",
+      "rozlišení_obrazovky": "480 x 800 px",
+      "img": "https://example.com/bticino_smart.png"
+    },
+    {
+      "id": 2,
+      "model": "Bticino Easy",
+      "popis": "Jednoduchý a cenově dostupný domácí telefon",
+      "rozhraní": "Tlačítkové ovládání",
+      "barva": "Bílá",
+      "funkce": "Možnost připojení k systému domácí automatizace",
+      "rozlišení_obrazovky": "N/A",
+      "img": "https://example.com/bticino_easy.png"
+    },
+    {
+      "id": 3,
+      "model": "Bticino Video",
+      "popis": "Domácí telefon s videokamerou pro bezpečnostní účely",
+      "rozhraní": "Dotykový displej",
+      "barva": "Stříbrná",
+      "funkce": "Integrovaný senzor pohybu pro aktivaci kamery",
+      "rozlišení_obrazovky": "720p HD",
+      "img": "https://example.com/bticino_video.png"
+    },
+    {
+      "id": 4,
+      "model": "Bticino Connect",
+      "popis": "Moderní domácí telefon s podporou Wi-Fi a Bluetooth",
+      "rozhraní": "Dotykový displej",
+      "barva": "Šedá",
+      "funkce": "Možnost připojení k chytrým domácím zařízením",
+      "rozlišení_obrazovky": "1080 x 1920 px",
+      "img": "https://example.com/bticino_connect.png"
+    },
+    {
+      "id": 5,
+      "model": "Bticino Style",
+      "popis": "Elegantní domácí telefon s výměnnými kryty pro personalizaci",
+      "rozhraní": "Dotykový displej",
+      "barva": "Růžová",
+      "funkce": "Podpora hlasového ovládání pro rychlou komunikaci",
+      "rozlišení_obrazovky": "720 x 1280 px",
+      "img": "https://example.com/bticino_style.png"
+    }
+  ]
+}
