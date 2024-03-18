@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BERCOM</title>
-    <link rel="icon" type="image/x-icon" href="../img/fav.png" />
-    <link rel="stylesheet" href="../static/style.css" />
-
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{ url_for('static', filename='img/fav.png') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
       integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
@@ -22,14 +27,17 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <header class="p-3 text-bg-secondary sticky-top">
+    <header class="p-3 sticky-top">
       <div class="container">
         <div
           class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
         >
-          <img src="../img/fav.png" width="70" height="70" />
+          <img
+            src="{{ url_for('static', filename='img/fav.png') }}"
+            width="70"
+            height="70"
+          />
           <span class="fs-2 mx-5 text-white">BerCom</span>
-
           <ul
             class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
           >
@@ -42,19 +50,20 @@
             <li>
               <a href="/products" class="nav-link p-3 text-white">Produkty</a>
             </li>
-
+            <li>
+              <a href="/contact" class="nav-link p-3 text-white">Kontakt</a>
+            </li>
             {% if 'user_id' in session %}
             <li><a href="/shop" class="nav-link p-3 text-white">FanShop</a></li>
             <li><a href="/bag" class="nav-link p-3 text-white">Košík</a></li>
             {% endif %}
           </ul>
-
           <div class="text-end">
             {% if 'user_id' in session %}
             <button
               id="logout"
               type="button"
-              class="btn btn-secondary text-black border border-white me-2"
+              class="btn btn-secondary p-3 text-white"
               onclick="window.location.href = '/logout'"
             >
               Log-Out
@@ -63,7 +72,7 @@
             <button
               id="login"
               type="button"
-              class="btn btn-secondary text-black border border-white me-2"
+              class="btn btn-secondary p-3 text-white"
               onclick="window.location.href = '/login';"
             >
               Log-In
@@ -71,7 +80,7 @@
             <button
               id="signup"
               type="button"
-              class="btn btn-secondary text-black border border-white me-2"
+              class="btn btn-secondary p-3 text-white"
               onclick="window.location.href = '/signup';"
             >
               Sign-Up
@@ -82,7 +91,6 @@
       </div>
     </header>
     <br />
-
     <div class="container bg-light p-3 mb-5 rounded">
       <div class="row featurette">
         <div class="col-md-7 order-md-2">
@@ -91,14 +99,18 @@
           </h1>
           <p class="lead">
             <br />
-            Klub byl založen v roce 1902, ale právo nosit titul Real (královský)
-            mu bylo uděleno až v roce 1920 králem Alfonsem XIII (v letech
-            1931-40 slovo Real odebráno z důvodu existence Druhé Španělské
-            republiky). Poslední kosmetická změna názvu přišla v roce 1941, kdy
-            bylo z názvu odstraněno anglické Football Club, které bylo nahrazeno
-            španělským Club de Fútbol. Stalo se tak z důvodu pečlivého
-            frankistického potírání všech anglicismů v zemi. V roce 1920 se
-            název klubu změnil se svolením krále na Real Madrid Club de Fútbol.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum
+            erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat.
+            Suspendisse sagittis ultrices augue. Cum sociis natoque penatibus et
+            magnis dis parturient montes, nascetur ridiculus mus. Praesent in
+            mauris eu tortor porttitor accumsan. Donec vitae arcu. Nam libero
+            tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+            quo minus id quod maxime placeat facere possimus, omnis voluptas
+            assumenda est, omnis dolor repellendus. Maecenas ipsum velit,
+            consectetuer eu lobortis ut, dictum at dui. Duis pulvinar. Fusce
+            nibh. Phasellus faucibus molestie nisl. Sed elit dui, pellentesque
+            a, faucibus vel, interdum nec, diam. In rutrum. Sed elit dui,
+            pellentesque a, faucibus vel, interdum nec, diam.
           </p>
         </div>
         <div class="col-md-5 order-md-1">
@@ -106,7 +118,7 @@
             class="featurette-image img-fluid mx-auto rounded"
             data-src="holder.js/400x400/auto"
             alt="400x400"
-            src="../img/stadion2.jpg"
+            src="{{ url_for('static', filename='img/deska4.jpg') }}"
             data-holder-rendered="true"
             style="width: 400px; height: 400px"
           />
@@ -117,12 +129,18 @@
         <div class="col-md-7">
           <p class="lead">
             <br />
-            Real hraje na stadionu Santiago Bernabéu v Madridu s kapacitou 81
-            044 diváků, který byl postaven v roce 1947. Klubovou historii zdobí
-            mnoho titulů. Real vyhrál třináctkrát Ligu mistrů UEFA (dříve Pohár
-            mistrů evropských zemí), tedy vícekrát než kterýkoliv jiný fotbalový
-            klub v celé Evropě. 18. prosince 2000 zvolila FIFA Real Madrid za
-            nejlepší fotbalový klub 20. století.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum
+            erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat.
+            Suspendisse sagittis ultrices augue. Cum sociis natoque penatibus et
+            magnis dis parturient montes, nascetur ridiculus mus. Praesent in
+            mauris eu tortor porttitor accumsan. Donec vitae arcu. Nam libero
+            tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+            quo minus id quod maxime placeat facere possimus, omnis voluptas
+            assumenda est, omnis dolor repellendus. Maecenas ipsum velit,
+            consectetuer eu lobortis ut, dictum at dui. Duis pulvinar. Fusce
+            nibh. Phasellus faucibus molestie nisl. Sed elit dui, pellentesque
+            a, faucibus vel, interdum nec, diam. In rutrum. Sed elit dui,
+            pellentesque a, faucibus vel, interdum nec, diam.
           </p>
           <br />
         </div>
@@ -131,7 +149,7 @@
             class="featurette-image img-fluid mx-auto rounded"
             data-src="holder.js/700x400/auto"
             alt="700x400"
-            src="../img/stadion.jpg"
+            src="{{ url_for('static', filename='img/deska3.jpg') }}"
             data-holder-rendered="true"
             style="width: 700px; height: 400px"
           />
@@ -158,7 +176,6 @@
       </table>
     </div>
     <br />
-
     <div id="footer">
       <footer class="py-3">
         <p class="text-center text-body-secondary">

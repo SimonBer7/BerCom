@@ -1,0 +1,218 @@
+.accordion {
+  background-color: #eee;
+  color: #444;
+  cursor: pointer;
+  padding: 18px;
+  width: 100%;
+  border: none;
+  text-align: left;
+  outline: none;
+  font-size: 15px;
+  transition: 0.4s;
+}
+
+.active,
+.accordion:hover {
+  background-color: royalblue;
+}
+
+.panel {
+  padding: 0 18px;
+  display: none;
+  background-color: white;
+  overflow: hidden;
+}
+
+header {
+  background: #444;
+}
+
+body {
+  background-image: url("../img/deska.jpg");
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat; /* Ensure the image is not repeated */
+  background-position: center;
+}
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 400px;
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: #bbb;
+  color: black;
+}
+
+.flip-card-back {
+  background-color: royalblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+tr:nth-child(even) {
+  background-color: gainsboro;
+}
+
+.active {
+  background-color: royalblue;
+}
+
+.nav-link {
+  border-radius: 10px;
+  margin-right: 20px;
+}
+
+.nav-link:hover {
+  background-color: cornflowerblue;
+}
+
+.active:hover {
+  background-color: cornflowerblue;
+}
+
+#login {
+  background-color: royalblue;
+}
+
+#login:hover {
+  background-color: cornflowerblue;
+}
+
+#signup {
+  background-color: royalblue;
+}
+
+#signup:hover {
+  background-color: cornflowerblue;
+}
+
+#logout {
+  background-color: royalblue;
+}
+
+#logout:hover {
+  background-color: cornflowerblue;
+}
+
+.card:hover {
+  box-shadow: 10px 10px 5px #aaaaaa;
+  transform: scale(1.1, 1.1);
+}
+
+.card:active {
+  transform: translateY(15px) scale(1.1, 1.1);
+}
+
+.card-body {
+  background-color: royalblue;
+}
+
+#footer {
+  background-color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+#footer .nav-link {
+  background-color: royalblue;
+}
+
+#footer .nav-link:hover {
+  background-color: royalblue;
+}
+
+#buttonBticino {
+  width: 100%;
+  height: 100px;
+  background-color: royalblue;
+}
+
+.contact-info {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+#contact-card {
+  background: #444;
+  padding: 0 20px;
+  margin: 0 10px;
+  width: 100%;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  cursor: pointer;
+}
+
+.card-icon {
+  font-size: 28px;
+  background: royalblue;
+  width: 60px;
+  height: 60px;
+  text-align: center;
+  line-height: 60px !important;
+  border-radius: 50%;
+  transition: 0.3s linear;
+}
+
+#contact-card:hover .card-icon {
+  background: none;
+  color: royalblue;
+  transform: scale(1.6);
+}
+
+#contact-card p {
+  margin-top: 20px;
+  font-weight: 300;
+  letter-spacing: 2px;
+  max-height: 0;
+  opacity: 0;
+  transition: 0.3s linear;
+}
+
+#contact-card:hover p {
+  max-height: 40px;
+  opacity: 1;
+}
+
+#sendButton {
+  background: royalblue;
+  width: 100px;
+}
+
+#sendButton:hover {
+  background-color: cornflowerblue;
+}

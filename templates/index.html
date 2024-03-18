@@ -4,16 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>BERCOM</title>
-    <link rel="icon" type="image/x-icon" href="../img/fav.png" />
-    <link rel="stylesheet" href="./static/style.css" />
-
+    <link
+      rel="icon"
+      type="image/x-icon"
+      href="{{ url_for('static', filename='img/fav.png') }}"
+    />
+    <link
+      rel="stylesheet"
+      href="{{ url_for('static', filename='css/style.css') }}"
+    />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
       integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
@@ -22,14 +27,17 @@
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
-    <header class="p-3 text-bg-secondary sticky-top">
+    <header class="p-3 sticky-top">
       <div class="container">
         <div
           class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start"
         >
-          <img src="../img/fav.png" width="70" height="70" />
+          <img
+            src="{{ url_for('static', filename='img/fav.png') }}"
+            width="70"
+            height="70"
+          />
           <span class="fs-2 mx-5 text-white">BerCom</span>
-
           <ul
             class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
           >
@@ -42,22 +50,22 @@
             <li>
               <a href="/products" class="nav-link p-3 text-white">Produkty</a>
             </li>
-
+            <li>
+              <a href="/contact" class="nav-link p-3 text-white">Kontakt</a>
+            </li>
             {% if 'user_id' in session %}
-
             <li>
               <a href="/shop" class="nav-link p-3 text-white">FanShop</a>
             </li>
             <li><a href="/bag" class="nav-link p-3 text-white">Košík</a></li>
             {% endif %}
           </ul>
-
           <div class="text-end">
             {% if 'user_id' in session %}
             <button
               id="logout"
               type="button"
-              class="btn btn-secondary text-black border border-white me-2"
+              class="btn btn-secondary p-3 text-white"
               onclick="window.location.href = '/logout'"
             >
               Log-Out
@@ -66,7 +74,7 @@
             <button
               id="login"
               type="button"
-              class="btn btn-secondary text-black border border-white me-2"
+              class="btn btn-secondary p-3 text-white"
               onclick="window.location.href = '/login';"
             >
               Log-In
@@ -74,7 +82,7 @@
             <button
               id="signup"
               type="button"
-              class="btn btn-secondary text-black border border-white me-2"
+              class="btn btn-secondary p-3 text-white"
               onclick="window.location.href = '/signup';"
             >
               Sign-Up
@@ -85,7 +93,6 @@
       </div>
     </header>
     <br />
-
     <div class="container bg-light p-3 rounded">
       <div
         id="carouselExampleCaptions"
@@ -116,13 +123,25 @@
         </div>
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="../img/img1.jpg" class="d-block w-100" alt="screen1" />
+            <img
+              src="{{ url_for('static', filename='img/kabely.jpg') }}"
+              class="d-block w-100"
+              alt="screen1"
+            />
           </div>
           <div class="carousel-item">
-            <img src="../img/img3.jpg" class="d-block w-100" alt="screen2" />
+            <img
+              src="{{ url_for('static', filename='img/kabely2.jpg') }}"
+              class="d-block w-100"
+              alt="screen2"
+            />
           </div>
           <div class="carousel-item">
-            <img src="../img/img2.jpg" class="d-block w-100" alt="screen3" />
+            <img
+              src="{{ url_for('static', filename='img/deska2.jpg') }}"
+              class="d-block w-100"
+              alt="screen3"
+            />
           </div>
         </div>
         <button
@@ -145,30 +164,26 @@
         </button>
       </div>
       <br />
-
       <div class="row featurette">
         <div class="col-md-7">
           <h2 class="featurette-heading">
-            Real Madrid,
-            <span class="text-muted">tým s velkou historií a úspěchy</span>
+            BerCom,
+            <span class="text-muted">firma s velkými cíly</span>
           </h2>
           <p class="lead">
             <br /><br />
-            Real Madrid CF (celým názvem: Real Madrid Club de Fútbol) je
-            španělský fotbalový klub, který sídlí v Madridu. Od sezóny 1929
-            hraje v Primera División, španělské nejvyšší fotbalové soutěži.
-            Největšími rivaly Realu Madrid jsou Atlético Madrid a FC Barcelona.
-            Kromě fotbalu má klub také oddíly pro basketbal, tenis, stolní tenis
-            a vodní pólo. Má přezdívku „bílý balet“. <br /><br />
-            Tým Real Madridu se vyznačuje velkým množstvím vynikajících hráčů,
-            kteří prošli klubem. Mezi nejvýznamnější patří jména jako Alfredo Di
-            Stéfano, Ferenc Puskás, Cristiano Ronaldo, Karim Benzema a mnoho
-            dalších. Klub má také dlouholetou rivalitu s jiným madridským týmem
-            Atlético Madrid a také s FC Barcelona. <br /><br />
-            Real Madrid je nejen klubem, ale také silnou značkou a institucí,
-            která má po celém světě velkou fanouškovskou základnu. Jeho
-            historie, vášeň a úspěchy ho činí jedním z nejvýznamnějších klubů ve
-            světovém fotbale.
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Vestibulum
+            erat nulla, ullamcorper nec, rutrum non, nonummy ac, erat.
+            Suspendisse sagittis ultrices augue. Cum sociis natoque penatibus et
+            magnis dis parturient montes, nascetur ridiculus mus. Praesent in
+            mauris eu tortor porttitor accumsan. Donec vitae arcu. Nam libero
+            tempore, cum soluta nobis est eligendi optio cumque nihil impedit
+            quo minus id quod maxime placeat facere possimus, omnis voluptas
+            assumenda est, omnis dolor repellendus. Maecenas ipsum velit,
+            consectetuer eu lobortis ut, dictum at dui. Duis pulvinar. Fusce
+            nibh. Phasellus faucibus molestie nisl. Sed elit dui, pellentesque
+            a, faucibus vel, interdum nec, diam. In rutrum. Sed elit dui,
+            pellentesque a, faucibus vel, interdum nec, diam.
           </p>
           <br />
         </div>
@@ -178,14 +193,13 @@
             data-src="holder.js/600x650/auto"
             alt="600x650"
             style="width: 600px; height: 650px"
-            src="../img/img4.jpg"
+            src="{{ url_for('static', filename='img/deska3.jpg') }}"
             data-holder-rendered="true"
           />
         </div>
       </div>
     </div>
     <br />
-
     <div id="footer">
       <footer class="py-3">
         <p class="text-center text-body-secondary">
