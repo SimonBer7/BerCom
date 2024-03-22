@@ -1,0 +1,54 @@
+{
+  "čipy": [
+    {
+      "id": 1,
+      "model": "RFID čip EM4100",
+      "description": "Standardní RFID čip pro identifikaci a sledování",
+      "special": "Kompatibilní s širokou škálou čteček",
+      "color": "Černá",
+      "frequency": "125 kHz",
+      "range": "N/A",
+      "img": "https://example.com/rfid_em4100.png"
+    },
+    {
+      "id": 2,
+      "model": "RFID čip MIFARE Classic 1K",
+      "description": "Pokročilý RFID čip s větší pamětí a vícenásobným přístupem",
+      "special": "Bezpečné a spolehlivé řešení pro řízení přístupu",
+      "color": "Bílá",
+      "frequency": "13.56 MHz",
+      "range": "Až 10 cm",
+      "img": "https://example.com/rfid_mifare.png"
+    },
+    {
+      "id": 3,
+      "model": "BLE Beacon čip",
+      "description": "Bluetooth Low Energy (BLE) čip pro lokalizaci a sledování",
+      "special": "Nízkoenergetické a výkonné řešení pro vnitřní navigaci",
+      "color": "Modrá",
+      "frequency": "2.4 GHz",
+      "range": "Až 50 metrů",
+      "img": "https://example.com/ble_beacon.png"
+    },
+    {
+      "id": 4,
+      "model": "NFC čip NTAG213",
+      "description": "Near Field Communication (NFC) čip pro rychlou bezkontaktní komunikaci",
+      "special": "Podpora jednoduchého propojení s chytrými telefony a zařízeními",
+      "color": "Žlutá",
+      "frequency": "13.56 MHz",
+      "range": "Až 10 cm",
+      "img": "https://example.com/nfc_ntag.png"
+    },
+    {
+      "id": 5,
+      "model": "UHF RFID čip",
+      "description": "Ultra High Frequency (UHF) RFID čip pro dlouhé dosahy a hromadné sledování",
+      "special": "Vhodný pro použití ve skladech a logistice",
+      "color": "Zelená",
+      "frequency": "860-960 MHz",
+      "range": "Až 10 metrů",
+      "img": "https://example.com/uhf_rfid.png"
+    }
+  ]
+}
