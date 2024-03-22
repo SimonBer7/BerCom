@@ -1,0 +1,54 @@
+{
+  "kamerove_systemy": [
+    {
+      "id": 1,
+      "model": "SecureCam 2000",
+      "description": "High-definition security camera system with advanced features",
+      "special": "Night vision capability for low-light surveillance",
+      "resolution": "1080p Full HD",
+      "color": "Black",
+      "type": "Dome Camera",
+      "img": "https://example.com/securecam_2000.png"
+    },
+    {
+      "id": 2,
+      "model": "SurveillancePro X3",
+      "description": "Professional-grade surveillance camera system for businesses",
+      "special": "Motion detection and alerting functionality",
+      "resolution": "4K Ultra HD",
+      "color": "Silver",
+      "type": "Bullet Camera",
+      "img": "https://example.com/surveillancepro_x3.png"
+    },
+    {
+      "id": 3,
+      "model": "SmartWatchCam",
+      "description": "Compact and versatile wearable camera for personal security",
+      "special": "Live streaming capability to mobile devices",
+      "resolution": "720p HD",
+      "color": "White",
+      "type": "Wearable Camera",
+      "img": "https://example.com/smartwatchcam.png"
+    },
+    {
+      "id": 4,
+      "model": "360Eye",
+      "description": "360-degree panoramic camera system for comprehensive surveillance",
+      "special": "Remote pan, tilt, and zoom functionality",
+      "resolution": "1440p Quad HD",
+      "color": "Gray",
+      "type": "Panoramic Camera",
+      "img": "https://example.com/360eye.png"
+    },
+    {
+      "id": 5,
+      "model": "OutdoorGuardian",
+      "description": "Weatherproof outdoor security camera system for home protection",
+      "special": "Built-in siren and two-way audio communication",
+      "resolution": "1080p Full HD",
+      "color": "Dark Green",
+      "type": "Outdoor Camera",
+      "img": "https://example.com/outdoorguardian.png"
+    }
+  ]
+}
