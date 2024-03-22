@@ -1,0 +1,54 @@
+{
+  "samozamykací_systémy": [
+    {
+      "id": 1,
+      "model": "ZámekGuard",
+      "description": "Bezpečnostní samozamykací zámek pro vchodové dveře",
+      "special": "Automatické zamykání po vstupu do domu",
+      "color": "Černá",
+      "type": "Elektronický",
+      "connection": "WiFi, Bluetooth",
+      "img": "https://example.com/zamek_guard.png"
+    },
+    {
+      "id": 2,
+      "model": "SecureLock 2000",
+      "description": "Moderní bezpečnostní systém pro domov",
+      "special": "Integrovaný senzor pohybu a detekce neoprávněného vstupu",
+      "color": "Bílá",
+      "type": "Elektromagnetický",
+      "connection": "Bluetooth",
+      "img": "https://example.com/securelock_2000.png"
+    },
+    {
+      "id": 3,
+      "model": "SmartGate",
+      "description": "Inteligentní samozamykací brána pro rodinné domy",
+      "special": "Možnost ovládání a monitorování přes mobilní aplikaci",
+      "color": "Stříbrná",
+      "type": "Elektrický",
+      "connection": "WiFi",
+      "img": "https://example.com/smartgate.png"
+    },
+    {
+      "id": 4,
+      "model": "AutoSecure",
+      "description": "Automatizovaný samozamykací systém pro bytové jednotky",
+      "special": "Integrace s chytrými domácími zařízeními a alarmovými systémy",
+      "color": "Šedá",
+      "type": "Elektronický",
+      "connection": "WiFi, Zigbee",
+      "img": "https://example.com/autosecure.png"
+    },
+    {
+      "id": 5,
+      "model": "Guardian Lock",
+      "description": "Bezpečnostní samozamykací zámek s odolným kovovým tělem",
+      "special": "Vysoká odolnost proti vandalismu a násilnému vniknutí",
+      "color": "Červená",
+      "type": "Mechanický",
+      "connection": "N/A",
+      "img": "https://example.com/guardian_lock.png"
+    }
+  ]
+}
