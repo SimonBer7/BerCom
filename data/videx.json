@@ -1,0 +1,54 @@
+{
+  "telefony": [
+    {
+      "id": 1,
+      "model": "Videx Smart",
+      "description": "Elegantní domácí telefon s moderním designem",
+      "special": "Integrovaný reproduktor pro hands-free komunikaci",
+      "color": "Černá",
+      "func": "Dotykový displej",
+      "resolution": "480 x 800 px",
+      "img": "https://example.com/videx_smart.png"
+    },
+    {
+      "id": 2,
+      "model": "Videx Easy",
+      "description": "Jednoduchý a cenově dostupný domácí telefon",
+      "special": "Možnost připojení k systému domácí automatizace",
+      "color": "Bílá",
+      "func": "Tlačítkové ovládání",
+      "resolution": "N/A",
+      "img": "https://example.com/videx_easy.png"
+    },
+    {
+      "id": 3,
+      "model": "Videx Video",
+      "description": "Domácí telefon s videokamerou pro bezpečnostní účely",
+      "special": "Integrovaný senzor pohybu pro aktivaci kamery",
+      "color": "Stříbrná",
+      "func": "Dotykový displej",
+      "resolution": "720p HD",
+      "img": "https://example.com/videx_video.png"
+    },
+    {
+      "id": 4,
+      "model": "Videx Connect",
+      "description": "Moderní domácí telefon s podporou Wi-Fi a Bluetooth",
+      "special": "Možnost připojení k chytrým domácím zařízením",
+      "color": "Šedá",
+      "func": "Dotykový displej",
+      "resolution": "1080 x 1920 px",
+      "img": "https://example.com/videx_connect.png"
+    },
+    {
+      "id": 5,
+      "model": "Videx Style",
+      "description": "Elegantní domácí telefon s výměnnými kryty pro personalizaci",
+      "special": "Podpora hlasového ovládání pro rychlou komunikaci",
+      "color": "Růžová",
+      "func": "Dotykový displej",
+      "resolution": "720 x 1280 px",
+      "img": "https://example.com/videx_style.png"
+    }
+  ]
+}
