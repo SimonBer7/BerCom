@@ -13,19 +13,12 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='css/style.css') }}"
     />
-
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
       rel="stylesheet"
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     />
-
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.min.js"
-      integrity="sha384-IDwe1+LCz02ROU9k972gdyvl+AESN10+x7tBKgc9I5HFtuNz0wWnPclzo6p9vxnk"
-      crossorigin="anonymous"
-    ></script>
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
   </head>
   <body>
@@ -40,7 +33,6 @@
             height="70"
           />
           <span class="fs-2 mx-5 text-white">BerCom</span>
-
           <ul
             class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0"
           >
@@ -61,7 +53,6 @@
             <li><a href="/bag" class="nav-link p-3 text-white">Bag</a></li>
             {% endif %}
           </ul>
-
           <div class="text-end">
             {% if 'user_id' in session %}
             <button
@@ -95,18 +86,55 @@
       </div>
     </header>
     <br />
-
-    <div class="container">
-      <button class="btn" id="buttonBticino">Bticino</button>
+    <div class="container bg-white rounded">
+      <div
+        class="filter_buttons d-flex justify-content-space_between flex-wrap"
+      >
+        <button class="btn active" id="buttonAll">Všechny produkty</button>
+        <button class="btn" id="buttonVidex">Videx</button>
+        <button class="btn" id="buttonBticino">Bticino</button>
+        <button class="btn" id="buttonCipy">Čipy</button>
+        <button class="btn" id="buttonKamery">Kamerové systémy</button>
+        <button class="btn" id="buttonZamky">Samozamykací zámky</button>
+      </div>
       <div class="panel p-5" id="panel">
         <div
-          class="d-flex justify-content-center flex-wrap"
+          class="products d-flex justify-content-center flex-wrap"
           id="produkty"
+        >
+          all
+        </div>
+        <div
+          class="products d-flex justify-content-center flex-wrap d-none"
+          id="videx"
+        >
+          videx
+        </div>
+        <div
+          class="products d-flex justify-content-center flex-wrap d-none"
+          id="bticino"
+        >
+          bticino
+        </div>
+        <div
+          class="products d-flex justify-content-center flex-wrap d-none"
+          id="chips"
+        >
+          chips
+        </div>
+        <div
+          class="products d-flex justify-content-center flex-wrap d-none"
+          id="cameras"
         ></div>
+        <div
+          class="products d-flex justify-content-center flex-wrap d-none"
+          id="locks"
+        >
+          locks
+        </div>
       </div>
     </div>
     <br />
-
     <div id="footer">
       <footer class="py-3">
         <p class="text-center text-body-secondary">
@@ -115,5 +143,11 @@
       </footer>
     </div>
     <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/script_all.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/videx_script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/bticino_script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/chips_script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/cameras_script.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/locks_script.js') }}"></script>
   </body>
 </html>

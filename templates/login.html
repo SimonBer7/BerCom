@@ -84,10 +84,12 @@
         </div>
       </div>
     </header>
-    <br />
 
-    <div class="container bg-white p-5">
+    <div class="container bg-white p-5 mt-5">
       <h2 class="mb-4 text-center">Log-In</h2>
+      {% if alert %}
+      <div class="alert alert-danger" role="alert">{{ alert }}</div>
+      {% endif %}
       <form action="/login" method="POST">
         <div class="form-group p-3">
           <label for="email">Email:</label>

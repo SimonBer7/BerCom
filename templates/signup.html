@@ -84,18 +84,20 @@
         </div>
       </div>
     </header>
-    <br />
 
-    <div class="container bg-white p-5">
+    <div class="container bg-white p-5 mt-5">
       <h2 class="mb-4 text-center">Sign-Up</h2>
+      {% if alert %}
+      <div class="alert alert-danger" role="alert">{{ alert }}</div>
+      {% endif %}
       <form action="/signup" method="POST">
-        <div class="mb-3 m-2">
-          <label for="last_name" class="form-label mt-2">Příjmení</label>
+        <div class="form-group p-3">
+          <label for="last_name">Příjmení:</label>
           <input
             type="text"
-            name="last_name"
             class="form-control"
             id="last_name"
+            name="last_name"
             required
           />
         </div>
