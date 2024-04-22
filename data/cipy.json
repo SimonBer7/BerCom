@@ -8,7 +8,7 @@
       "color": "Černá",
       "frequency": "125 kHz",
       "range": "N/A",
-      "img": "https://example.com/rfid_em4100.png"
+      "img": "https://img.alarmax.cz/images/ZabezpeceniObjektu/privesek-standard-em-125-khz-modry.jpg?vid=1&tid=31&r=D"
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "color": "Bílá",
       "frequency": "13.56 MHz",
       "range": "Až 10 cm",
-      "img": "https://example.com/rfid_mifare.png"
+      "img": "https://img.alarmax.cz/images/ZabezpeceniObjektu/privesek-standard-em-125-khz-modry.jpg?vid=1&tid=31&r=D"
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "color": "Modrá",
       "frequency": "2.4 GHz",
       "range": "Až 50 metrů",
-      "img": "https://example.com/ble_beacon.png"
+      "img": "https://img.alarmax.cz/images/ZabezpeceniObjektu/privesek-standard-em-125-khz-modry.jpg?vid=1&tid=31&r=D"
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "color": "Žlutá",
       "frequency": "13.56 MHz",
       "range": "Až 10 cm",
-      "img": "https://example.com/nfc_ntag.png"
+      "img": "https://img.alarmax.cz/images/ZabezpeceniObjektu/privesek-standard-em-125-khz-modry.jpg?vid=1&tid=31&r=D"
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "color": "Zelená",
       "frequency": "860-960 MHz",
       "range": "Až 10 metrů",
-      "img": "https://example.com/uhf_rfid.png"
+      "img": "https://img.alarmax.cz/images/ZabezpeceniObjektu/privesek-standard-em-125-khz-modry.jpg?vid=1&tid=31&r=D"
     }
   ]
 }
