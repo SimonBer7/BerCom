@@ -8,7 +8,7 @@
       "color": "Černá",
       "type": "Elektronický",
       "connection": "WiFi, Bluetooth",
-      "img": "https://example.com/zamek_guard.png"
+      "img": "https://www.ikos.cz/produkty-obrazky/13.jpg"
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "color": "Bílá",
       "type": "Elektromagnetický",
       "connection": "Bluetooth",
-      "img": "https://example.com/securelock_2000.png"
+      "img": "https://www.ikos.cz/produkty-obrazky/13.jpg"
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "color": "Stříbrná",
       "type": "Elektrický",
       "connection": "WiFi",
-      "img": "https://example.com/smartgate.png"
+      "img": "https://www.ikos.cz/produkty-obrazky/13.jpg"
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "color": "Šedá",
       "type": "Elektronický",
       "connection": "WiFi, Zigbee",
-      "img": "https://example.com/autosecure.png"
+      "img": "https://www.ikos.cz/produkty-obrazky/13.jpg"
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "color": "Červená",
       "type": "Mechanický",
       "connection": "N/A",
-      "img": "https://example.com/guardian_lock.png"
+      "img": "https://www.ikos.cz/produkty-obrazky/13.jpg"
     }
   ]
 }
