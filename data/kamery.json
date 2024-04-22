@@ -8,7 +8,7 @@
       "resolution": "1080p Full HD",
       "color": "Black",
       "type": "Dome Camera",
-      "img": "https://example.com/securecam_2000.png"
+      "img": "https://www.tvproducts.cz/nahledy/imitace_kamery_outdoor.jpg"
     },
     {
       "id": 2,
@@ -18,7 +18,7 @@
       "resolution": "4K Ultra HD",
       "color": "Silver",
       "type": "Bullet Camera",
-      "img": "https://example.com/surveillancepro_x3.png"
+      "img": "https://www.tvproducts.cz/nahledy/imitace_kamery_outdoor.jpg"
     },
     {
       "id": 3,
@@ -28,7 +28,7 @@
       "resolution": "720p HD",
       "color": "White",
       "type": "Wearable Camera",
-      "img": "https://example.com/smartwatchcam.png"
+      "img": "https://www.tvproducts.cz/nahledy/imitace_kamery_outdoor.jpg"
     },
     {
       "id": 4,
@@ -38,7 +38,7 @@
       "resolution": "1440p Quad HD",
       "color": "Gray",
       "type": "Panoramic Camera",
-      "img": "https://example.com/360eye.png"
+      "img": "https://www.tvproducts.cz/nahledy/imitace_kamery_outdoor.jpg"
     },
     {
       "id": 5,
@@ -48,7 +48,7 @@
       "resolution": "1080p Full HD",
       "color": "Dark Green",
       "type": "Outdoor Camera",
-      "img": "https://example.com/outdoorguardian.png"
+      "img": "https://www.tvproducts.cz/nahledy/imitace_kamery_outdoor.jpg"
     }
   ]
 }
